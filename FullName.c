@@ -2,7 +2,8 @@
 
 int main(){
 
-printf("Crescenzo");
-printf("De Luca");
+printf(" Crescenzo \n");
+printf(" De Luca \n");
+printf("\n")
 return 0;
 }
