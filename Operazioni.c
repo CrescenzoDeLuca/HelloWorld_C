@@ -1,23 +1,25 @@
 #include <stdio.h>
 
+int main()
+{
+	int a, b, add, sott, mol;
+	int div, res;
 
-int main(){
-int A, B, Add, Sott, Mol;
-double Div;
-printf("inserisci variabili:\n");
-scanf("%d\n",&A);
-scanf("%d\n",&B);
+	printf("inserisci variabili:\n");
+	scanf("%d", &a);
+	scanf("%d", &b);
 
-Add=A+B;
-Sott=A-B;
-Mol=A*B;
-Div=A/B;
+	add = a+b;
+	sott = a-b;
+	mol = a*b;
+	div = a/b;
+	res = a%b;
+	
+	printf("addizione == %d\n", add);
+	printf("sottrazione == %d\n", sott);
+	printf("moltiplicazione == %d\n", mol);
+	printf("divisione == %d\n", div);
+	printf("resto == %d\n", res);
 
-printf("addizione == %d\n ",Add);
-printf("sottrazione == %d\n",Sott);
-printf("moltiplicazione == %d\n",Mol);
-printf("divisione == %lf\n",Div);
-
-
-return 0;
+	return 0;
 }
