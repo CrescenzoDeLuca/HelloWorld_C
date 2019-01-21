@@ -3,7 +3,7 @@
 int main()
 {
 
-int num, res, n;
+int num, res, n=0, d;
 
 printf("inserisci un numero da 3 cifre---> ");
 scanf("%d", &num);
@@ -16,19 +16,14 @@ if(num > 999)
 }
 else
 {  
-   n=num/100;
-   res=n*100;
-   num=num-res;
-   res=0;
-   
-   n=n+(num/10);
-   res=(num/10)*10;
-   num=num-res;
-   res=0;
-  
-   n=n+num;
-   
-   
-   printf("il risultato  e' ---> %d\n", n);
+   while(num > 0){
+        d = num%10;
+        n=n+d;
+        num=num/10;
+        
+   }
+ printf("%d\n", n);
 }
+
+return 0;
 }
